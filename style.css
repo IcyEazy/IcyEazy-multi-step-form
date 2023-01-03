@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5rem 10rem;
+    background-color: hsl(229, 24%, 87%);
+    color: hsl(213, 96%, 18%);
+}
+
+.mobile{
+    display: none;
+}
+button{
+    padding: .4rem 1rem;
+    color: hsl(229, 24%, 87%);
+    border: 2px solid hsl(213, 96%, 18%);
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: hsl(213, 90%, 25%);
+    border-color: hsl(213, 90%, 25%);
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+a:hover{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.a{
+    opacity: 0;
+}
+.field{
+    color:red;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.step-color{
+    background-color: hsl(229, 24%, 87%);
+    color: black;
+    font-weight: 500;
+}
+.sub-props{
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(229, 24%, 87%);
+}
+
+
+main{
+    background-color: hsl(229, 24%, 87%);
+}
+.container{
+    padding: .8rem;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.sidebar{
+    background-image: url("./assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem 5rem 8.3rem 2rem;
+    color: white;
+}
+.side{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.step-detail{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.step{
+    color: hsl(229, 24%, 87%);
+    font-size: 14px;
+}
+.detail{
+    font-weight: 500;
+}
+.step-num{
+    border: 2px solid white;
+    padding: .3rem .6rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.fillings{
+    margin: auto;
+    padding: 0 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+input{
+    margin-top: .3rem;
+    padding: .5rem 1rem;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.info-input:focus{
+    outline: 1px solid hsl(243, 100%, 62%);
+}
+.info-input{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.next-btn{
+    margin: 7rem 0 1rem 0;
+}
+
+.subs{
+    display: flex;
+    margin-top: 2rem;
+}
+.sub{
+    width: 110px;
+}
+.sub, .add-on{
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sub:hover, .add-on:hover{
+    border-color: hsl(243, 100%, 62%);
+}
+.sub-det{
+    font-weight: 500;
+}
+.small{
+    font-size: 14px;
+    color: hsl(231, 3%, 48%);
+}
+.check{
+    display: flex;
+    margin-right: 1rem;
+}
+.check input{
+    margin-right: .8rem;
+    width: 20px;
+}
+.add-on{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-on-head{
+    font-weight: 700;
+}
+.step3 .next-btn{
+    margin-top: 4rem;
+}
+.advanced{
+    margin: auto 1rem;
+}
+.larger{
+    margin: 1rem auto;
+}
+.mon-year{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 7px;
+}
+.deskt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finishing{
+    background-color: hsl(217, 100%, 97%);
+    padding: 0 .75rem .25rem .75rem;
+    border-radius: 10px;
+}
+.finish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sub-clicked, #duration-clicked{
+    font-weight: 500;
+}
+.add-on-checked{
+    font-size: 14px;
+}
+.step2 .mo, .step2 .yr{
+    font-size: 14px;
+    color: hsl(240, 0%, 60%);
+}
+.add-title{
+    color: hsl(240, 0%, 60%);
+}
+.checked{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total{
+    padding: 0 .75rem;
+    margin-top: .5rem;
+}
+.per-time, .total-amount{
+    display: flex;
+}
+.per-time .mo, .per-time .yr{
+    margin-left: .2rem;
+}
+.total-amount{
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(243, 100%, 62%);
+}
+.step4 button{
+    background-color: hsl(243, 100%, 62%);
+    border-color: hsl(243, 100%, 62%);
+    color: white;
+    transition: all 0.3s;
+}
+.step4 button:hover{
+    background-color: hsl(228, 100%, 84%);
+    border-color: hsl(228, 100%, 84%);
+}
+.sub-chosen .step-detail span a{
+    text-decoration: underline;
+}
+
+.step5 .fill{
+    text-align: center;
+    padding: 1rem 6rem;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        margin: 5rem;
+    }
+    .sidebar{
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .next-btn{
+        margin: .3rem;
+    }
+    .fillings{
+        padding: 0 1rem;
+    }
+    .sub{
+        width: 70px;
+        padding-bottom: 0;
+    }
+    .check{
+        margin-right: 0.5rem;
+    }
+    .add-on{
+        padding: 0 .5rem;
+    }
+    .larger{
+        margin: .5rem auto;
+    }
+    .step3 .next-btn{
+        margin-top: .5rem;
+    }
+    .total{
+        margin-top: 0;
+    }
+    .step5 .fill{
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    body{
+        margin: 0;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    button{
+        padding: .4rem .8rem;
+    }
+    .container{
+        padding: 0;
+        flex-direction: column;
+        background-color: hsl(229, 24%, 87%);
+        border-radius: 0;
+    }
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        background-image: url("./assets/images/bg-sidebar-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem 0 6rem 0;
+    }
+    .fillings{
+        margin: 0;
+        padding: 0;
+    }
+    .fill{
+        padding: 2rem 1rem;
+        border-radius: 10px;
+        background-color: white;
+        position: relative;
+        top: -5.5rem;
+        margin: auto 1rem;
+        -webkit-box-shadow: 0px 11px 11px -3px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 11px 11px -3px rgba(0,0,0,0.25);
+        box-shadow: 0px 11px 11px -3px rgba(0,0,0,0.25);
+    }
+    .subs{
+        flex-direction: column;
+    }
+    .sub{
+        display: flex;
+        width: auto;
+        padding: .5rem 1rem;
+    }
+    .sub img{
+        margin-right: 1rem;
+    }
+    .advanced{
+        margin: 1rem 0;
+    }
+    .larger{
+        margin: 1rem auto;
+    }
+    .mobi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .next-btn{
+        background-color: white;
+        margin: -4rem 0 0 0;
+        padding: .5rem;
+    }
+    .step1 .next-btn, .step4 .next-btn{
+        margin-top: 1rem;
+    }
+    .step5 .fill{
+        padding: 1rem 1.5rem;
+    }
+    .total{
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .sidebar{
+        background-size: auto;
+    }
+}
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  margin: auto 1.5rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.attribution {
+    margin-top: 2rem;
+    font-size: 14px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

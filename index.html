@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <div class="info side">
+            <p id="num-1" class="step-num">1</p>
+            <p class="step-detail desktop"><span class="step">Step 1</span> <span class="detail">Your info</span></p>
+          </div>
+          <div class="plans side">
+            <p id="num-2" class="step-num">2</p>
+            <p class="step-detail desktop"><span class="step">Step 2</span> <span class="detail">Select plan</span></p>
+          </div>
+          <div class="add-ons side">
+            <p id="num-3" class="step-num">3</p>
+            <p class="step-detail desktop"><span class="step">Step 3</span> <span class="detail">Add-ons</span></p>
+          </div>
+          <div class="summary side">
+            <p id="num-4" class="step-num">4</p>
+            <p class="step-detail desktop"><span class="step">Step 4</span> <span class="detail"></span>Summary</p>
+          </div>
+        </div>
+
+        <div class="fillings">
+          <div class="step1">
+            <div class="fill">
+              <h1>Personal info</h1>
+              <p>Please provide your name, email address, and phone number.</p>
+              <form id="news_action" action="./index.html">
+                <label for="name">Name
+                  <input class="info-input" type="text" name="name" placeholder="e.g. Stephen King" id="name" required oninvalid = "this.setCustomValidity('This field is required')">
+                </label>
+                <label for="email">Email Address
+                  <input class="info-input" type="email" name="email" placeholder="e.g. stephenking@lorem.com" id="email" required oninvalid = "this.setCustomValidity('This field is required')">
+                </label>
+                <label for="tel">Phone Number
+                  <input class="info-input" type="tel" name="tel" placeholder="e.g. +1 234 567 890" id="tel" required oninvalid = "this.setCustomValidity('This field is required')">
+                </label>
+              </form>
+              <p class="field hide">The fields are required to be able to continue</p>
+            </div>
+            <div class="next-btn">
+              <div class="desktop deskt"><span class="a">g</span> <button class="btn-1" type="submit">Next Step</button></div>
+              <div class="mobile mobi"> <span class="a">g</span> <button class="btn-1" type="submit">Next Step</button></div>
+            </div>
+          </div>
+
+          <div class="step2 hide">
+            <div class="fill">
+              <h1>Select your plan</h1>
+              <p>You have the option of monthly or yearly billing.</p>
+              <div class="subs">
+                <div class="sub">
+                  <img src="./assets/images/icon-arcade.svg" alt="arcade">
+                  <p class="step-detail"><span class="sub-det">Arcade</span> <span class="mo">$9/mo</span> <span class="yr hide">$90/yr</span> <span class="free hide">2 months free</span></p>
+                </div>
+                <div class="sub advanced">
+                  <img src="./assets/images/icon-advanced.svg" alt="advanced">
+                  <p class="step-detail"><span class="sub-det">Advanced</span> <span class="mo">$12/mo</span> <span class="yr hide">$120/yr</span> <span class="free hide">2 months free</span></p>
+                </div>
+                <div class="sub">
+                  <img src="./assets/images/icon-pro.svg" alt="pro">
+                  <p class="step-detail"><span class="sub-det">Pro</span> <span class="mo">$15/mo</span> <span class="yr hide">$150/yr</span> <span class="free hide">2 months free</span></p>
+                </div>
+              </div>
+              <div class="mon-year">
+                <p id="monthly">Monthly</p>
+                <label class="switch">
+                  <input id="duration-check-box" type="checkbox" placeholder="ch">
+                  <span class="slider round"></span>
+                </label>
+                <p id="yearly">Yearly</p>
+              </div>
+            </div>
+            <div class="next-btn">
+              <div class="desktop deskt">
+                <a class="back-btn-2" href="#">Go Back</a>
+                <button class="deskt-btn btn-2" type="button">Next Step</button>
+              </div>
+              <div class="mobile mobi">
+                <a class="back-btn-2" href="#">Go Back</a>
+                <button class="mobi-btn btn-2" type="button">Next Step</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="step3 hide">
+            <div class="fill">
+              <h1>Pick add-ons</h1>
+              <p>Add-ons help enhance your gaming experience.</p>
+              <div class="add-ons">
+                <div class="add-on">
+                  <div class="check">
+                    <input class="checkbox" type="checkbox" placeholder="add" checked>
+                    <p class="step-detail"><span class="add-on-head">Online service</span> <span class="small">Access to multiplayer games</span></p>
+                  </div>
+                  <p class="mo">+$1/mo</p>
+                  <p class="yr hide">+$10/yr</p>
+                </div>
+                <div class="add-on larger">
+                  <div class="check">
+                    <input class="checkbox" type="checkbox" placeholder="add" checked>
+                    <p class="step-detail"><span class="add-on-head">Larger storage</span> <span class="small">Extra 1TB of cloud save</span></p>
+                  </div>
+                  <p class="mo">+$2/mo</p>
+                  <p class="yr hide">+$20/yr</p>
+                </div>
+                <div class="add-on">
+                  <div class="check">
+                    <input class="checkbox" type="checkbox" placeholder="add">
+                    <p class="step-detail"><span class="add-on-head">Customizable Profile</span> <span class="small">Custom theme on your profile</span></p>
+                  </div>
+                  <p class="mo">+$2/mo</p>
+                  <p class="yr hide">+$20/yr</p>
+                </div>
+              </div>
+            </div>
+            <div class="next-btn">
+              <div class="desktop deskt">
+                <a class="back-btn-3" href="#">Go Back</a>
+                <button class="deskt-btn btn-3" type="button">Next Step</button>
+              </div>
+              <div class="mobile mobi">
+                <a class="back-btn-3" href="#">Go Back</a>
+                <button class="mobi-btn btn-3" type="button">Next Step</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="step4 hide">
+            <div class="fill">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.</p>
+              <div class="finishing">
+                <div class="sub-chosen finish">
+                  <p class="step-detail"><span><span id="sub-clicked">Arcade</span> (<span id="duration-clicked">Monthly</span>)</span>  <span><a id="change-btn" href="#">Change</a></span></p>
+                  <p id="sub-amount">$<span class="sub-val">9</span>/mo</p>
+                </div>
+                <hr>
+                <p class="add-on-checked hide"><span class="add-title">Online service</span> <span class="mo">+$<span class="mo-val">1</span>/mo</span> <span class="yr hide">+$<span class="yr-val">10</span>/yr</span></p>
+                <p class="add-on-checked hide"><span class="add-title">Larger storage</span> <span class="mo">+$<span class="mo-val">2</span>/mo</span> <span class="yr hide">+$<span class="yr-val">20</span>/yr</span></p>
+                <p class="add-on-checked hide"><span class="add-title">Customizable Profile</span> <span class="mo">+$<span class="mo-val">2</span>/mo</span> <span class="yr hide">+$<span class="yr-val">20</span>/yr</span></p>
+              </div>
+              <div class="total finish">
+                <p class="per-time">Total (per <span class="mo">month</span> <span class="yr hide">year</span>)</p>
+                <p class="total-amount">$<span id="total-val">12</span>/<span class="mo">mo</span><span class="yr hide">yr</span></p>
+              </div>
+            </div>
+            <div class="next-btn">
+              <div class="desktop deskt">
+                <a class="back-btn-4" href="#">Go Back</a>
+                <button class="deskt-btn btn-4" type="button">Confirm</button>
+              </div>
+              <div class="mobile mobi">
+                <a class="back-btn-4" href="#">Go Back</a>
+                <button class="mobi-btn btn-4" type="button">Confirm</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="step5 hide">
+            <div class="fill">
+              <img src="./assets/images/icon-thank-you.svg" alt="thank-you">
+              <h1>Thank you!</h1>
+              <p>Thanks for confirming your subscription! We hope you have fun 
+                using our platform. If you ever need support, please feel free 
+                to email us at support@loremgaming.com.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+        Coded by <a href="#">Adigun Israel Collins</a>.
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
